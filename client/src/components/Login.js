@@ -8,8 +8,8 @@ import {axiosWithAuth} from '../utils/axiosWithAuth';
 class Login extends React.Component {
   state = {
     credentials: {
-      username: '',
-      password: ''
+      username: 'Lambda School',
+      password: 'i<3Lambda4'
     }
   };
 
@@ -39,6 +39,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className='login-form'>
+        <h1>Welcome to the Bubble App!</h1>
         <form onSubmit={this.login}>
           <input type='text' name='username' value={this.state.credentials.username} onChange={this.handleChange} />
           <input type='password' name='password' value={this.state.credentials.password} onChange={this.handleChange} />

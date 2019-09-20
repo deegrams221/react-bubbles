@@ -11,6 +11,7 @@ const ColorList = ({colors, updateColors}) => {
   console.log(colors);
   const [editing, setEditing] = useState(false);
   const [colorToEdit, setColorToEdit] = useState(initialColor);
+  const [addColors, setAddColors] = useState([])
 
   const editColor = color => {
     setEditing(true);
@@ -44,6 +45,17 @@ const ColorList = ({colors, updateColors}) => {
       })
       .catch(error => console.log(error));
   };
+
+  // add color - stretch
+  // const addColor = color => {
+  //   axiosWithAuth()
+  //     .post('/colors', color)
+  //     .then(res => {
+  //       // console.log('addColor: res', res.data);
+  //       setAddColors(res.data);
+  //     })
+  //     .catch(error => console.log(error));
+  // };
 
   return (
     <div className="colors-wrap">
@@ -96,6 +108,7 @@ const ColorList = ({colors, updateColors}) => {
       )}
       <div className="spacer" />
       {/* stretch - build another form here to add a color */}
+
     </div>
   );
 };
