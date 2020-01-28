@@ -97,3 +97,31 @@ form {
     margin-top: 16px;
   }
 }
+
+.login-form {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 36px 4px 40px;
+  }
+
+  input {
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  button {
+    margin: 0 auto;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+    margin-top: 16px;
+    width: 100px;
+  }
+}
